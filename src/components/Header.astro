@@ -1,0 +1,17 @@
+---
+import Logo from "../icons/Logo.astro";
+import Anchor from "./Anchor.astro";
+---
+
+<header class="flex justify-center py-6">
+  <nav class="flex gap-8">
+    <Logo />
+    <Anchor reference="#projects" text="projects" />
+    <Anchor reference="#about" text="about" />
+    <Anchor reference="#contact" text="contact" />
+    <button
+      class="hover:text-black duration-150 font-semibold flex content-center mt-[1.2px]"
+      >es</button
+    >
+  </nav>
+</header>
