@@ -1,4 +1,5 @@
 ---
+import "../styles/intro.css";
 import { Image } from "astro:assets";
 import avatar from "../assets/avatar.png";
 import Left from "../icons/Left.astro";
@@ -7,13 +8,21 @@ import Right from "../icons/Right.astro";
 
 <section class="flex items-center gap-[100px] cursor-default">
   <div class="flex items-center">
-    <Left width="70px" />
-    <Image src={avatar} alt="avatar" class="w-[140px] ml-5 mr-4" />
-    <Right width="70px" />
+    <Left width="80px" animation="floating-left" />
+    <Image
+      src={avatar}
+      alt="avatar"
+      loading="eager"
+      class="w-[140px] ml-5 mr-4"
+    />
+    <Right width="80px" animation="floating-right" />
   </div>
-  <div class="flex flex-col gap-3">
-    <h1 class="mb-3 hover:-translate-y-[1.5px] hover:drop-shadow duration-200">
-      Hello, I'm Nuria.
+  <div class="flex
+      flex-col
+      gap-1
+      underline-name">
+    <h1 class="mb-3">
+      Hello, I'm <span>Nuria</span>.
     </h1>
     <p class="text-lg">
       I’m a full stack developer based in Barcelona, Spain 🔅
