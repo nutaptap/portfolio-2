@@ -34,14 +34,36 @@
   }
 }
 
-.underline-name {
-  span {
-    transition: 1s;
+.gradient {
+  background: linear-gradient(to right, #7face0, #eb8cee);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rotate-gradient linear 3s infinite;
+  position: relative;
+}
+
+@keyframes rotate-gradient {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
   }
 }
 
-.underline-name:hover {
-  span {
-    color: #c986e4;
+.name {
+  z-index: 2;
+  position: absolute;
+  transition: 0.4s;
+}
+
+.intro-text:hover {
+  .name {
+    opacity: 0%;
   }
 }

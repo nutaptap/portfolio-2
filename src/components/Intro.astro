@@ -6,30 +6,41 @@ import Left from "../icons/Left.astro";
 import Right from "../icons/Right.astro";
 ---
 
-<section class="flex items-center gap-[100px] cursor-default">
-  <div class="flex items-center">
-    <Left width="80px" animation="floating-left" />
+<section
+  class="flex items-center gap-[100px] cursor-default flex-col md:flex-row"
+>
+  <div class="flex items-center w-[250px]">
+    <Left width="130px" animation="floating-left" />
     <Image
       src={avatar}
       alt="avatar"
       loading="eager"
       class="w-[140px] ml-5 mr-4"
     />
-    <Right width="80px" animation="floating-right" />
+    <Right width="130px" animation="floating-right" />
   </div>
   <div class="flex
       flex-col
-      gap-1
-      underline-name">
+      intro-text w-[490px] px-3">
     <h1 class="mb-3">
-      Hello, I'm <span>Nuria</span>.
+      Hello, I'm <span class="name">Nuria</span><span class="gradient"
+        >Nuria</span
+      >.
     </h1>
     <p class="text-lg">
-      I’m a full stack developer based in Barcelona, Spain 🔅
+      I’m a fullstack developer based in Barcelona, Spain 🇪🇸
     </p>
     <p class="text-lg">
-      I create beautiful & complex UI’s without compromising performance or
-      accessibility.
+      I create beautiful & intricate user interfaces while prioritizing both
+      performance and accessibility.
     </p>
+    <div class="mt-3 flex gap-3">
+      <button class="border border-slate-800 rounded-lg py-[2px] px-3"
+        >github</button
+      >
+      <button class="border border-slate-800 rounded-lg py-[2px] px-3"
+        >linkedin</button
+      >
+    </div>
   </div>
 </section>
