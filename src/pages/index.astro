@@ -1,6 +1,9 @@
 ---
 import "../styles/global.css";
 import Header from "../components/Header.astro";
+import Intro from "../components/Intro.astro";
+import Left from "../icons/Left.astro";
+import Right from "../icons/Right.astro";
 ---
 
 <html lang="en">
@@ -11,19 +14,35 @@ import Header from "../components/Header.astro";
     <meta name="generator" content={Astro.generator} />
     <title>Astro</title>
   </head>
-  <body class="flex flex-col">
+  <body
+    class="flex flex-col absolute inset-0 -z-10 h-full w-full bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"
+  >
     <Header />
-    <main class="mt-32">
-      <h1>Hello, I'm Nuria</h1>
-      <section class="mt-[400px]" id="projects">
-        <h2>projects</h2>
-      </section>
-      <section class="mt-[400px]" id="about">
-        <h2>about</h2>
-      </section>
-      <section class="mt-[400px] pb-[400px]" id="contact">
-        <h2>contact</h2>
-      </section>
+    <main class="mt-32 flex justify-center">
+      <div class="w-[850px]">
+        <Intro />
+        <section class="mt-[400px]" id="projects">
+          <div class="flex gap-4">
+            <Left width="15px" />
+            <h2>projects</h2>
+            <Right width="15px" />
+          </div>
+        </section>
+        <section class="mt-[400px]" id="about">
+          <div class="flex gap-4">
+            <Left width="15px" />
+            <h2>about</h2>
+            <Right width="15px" />
+          </div>
+        </section>
+        <section class="mt-[400px] pb-[400px]" id="contact">
+          <div class="flex gap-4">
+            <Left width="15px" />
+            <h2>contact</h2>
+            <Right width="15px" />
+          </div>
+        </section>
+      </div>
     </main>
   </body>
 </html>

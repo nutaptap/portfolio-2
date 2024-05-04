@@ -10,8 +10,18 @@
     @apply motion-reduce:scroll-auto;
   }
   body {
-    @apply bg-violet-200;
+    @apply bg-white;
     @apply text-slate-800;
     @apply font-inter;
+  }
+  h1,
+  h2,
+  h3 {
+    @apply text-3xl;
+    @apply tracking-wider;
+  }
+
+  h1 {
+    @apply text-4xl;
   }
 }

@@ -1,0 +1,26 @@
+---
+import { Image } from "astro:assets";
+import avatar from "../assets/avatar.png";
+import Left from "../icons/Left.astro";
+import Right from "../icons/Right.astro";
+---
+
+<section class="flex items-center gap-[100px] cursor-default">
+  <div class="flex items-center">
+    <Left width="70px" />
+    <Image src={avatar} alt="avatar" class="w-[140px] ml-5 mr-4" />
+    <Right width="70px" />
+  </div>
+  <div class="flex flex-col gap-3">
+    <h1 class="mb-3 hover:-translate-y-[1.5px] hover:drop-shadow duration-200">
+      Hello, I'm Nuria.
+    </h1>
+    <p class="text-lg">
+      I’m a full stack developer based in Barcelona, Spain 🔅
+    </p>
+    <p class="text-lg">
+      I create beautiful & complex UI’s without compromising performance or
+      accessibility.
+    </p>
+  </div>
+</section>
