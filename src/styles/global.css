@@ -25,4 +25,8 @@
     @apply text-4xl;
     @apply font-semibold;
   }
+
+  b {
+    @apply font-semibold;
+  }
 }
