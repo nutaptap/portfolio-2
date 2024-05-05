@@ -1,0 +1,10 @@
+---
+const { text } = Astro.props;
+---
+
+<button
+  class="border border-slate-400 rounded-2xl py-1 px-4 bg-white text-lg tracking-wider hover:bg-slate-800 hover:text-white hover:border-slate-800 duration-150 flex gap-1 items-center"
+>
+  <slot />
+  {text}</button
+>
