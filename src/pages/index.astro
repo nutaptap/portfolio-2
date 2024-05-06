@@ -4,6 +4,7 @@ import Header from "../components/Header.astro";
 import Intro from "../components/Intro.astro";
 import Left from "../icons/Left.astro";
 import Right from "../icons/Right.astro";
+import Projects from "../components/Projects.astro";
 ---
 
 <html lang="en">
@@ -12,30 +13,24 @@ import Right from "../icons/Right.astro";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
+    <title>Nuria | Fullstack developer</title>
   </head>
   <body
     class="flex flex-col absolute inset-0 -z-10 h-full w-full bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"
   >
     <Header />
     <main class="mt-32 flex justify-center">
-      <div class="w-[850px]">
+      <div class="w-[850px] flex flex-col items-center">
         <Intro />
-        <section class="mt-[400px]" id="projects">
-          <div class="flex gap-4">
-            <Left width="15px" />
-            <h2>projects</h2>
-            <Right width="15px" />
-          </div>
-        </section>
-        <section class="mt-[400px]" id="about">
+        <Projects />
+        <section class="mt-32" id="about">
           <div class="flex gap-4">
             <Left width="15px" />
             <h2>about</h2>
             <Right width="15px" />
           </div>
         </section>
-        <section class="mt-[400px] pb-[400px]" id="contact">
+        <section class="mt-32 pb-32" id="contact">
           <div class="flex gap-4">
             <Left width="15px" />
             <h2>contact</h2>

@@ -26,6 +26,11 @@
     @apply font-semibold;
   }
 
+  h3 {
+    @apply text-2xl;
+    @apply font-semibold;
+  }
+
   b {
     @apply font-semibold;
   }
