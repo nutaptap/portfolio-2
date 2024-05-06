@@ -1,14 +1,18 @@
 ---
+import Browser from "../icons/Browser.astro";
 import Left from "../icons/Left.astro";
 import Right from "../icons/Right.astro";
 import Codekey from "./Codekey.astro";
 ---
 
-<section class="mt-32 w-[700px]" id="projects">
+<section class="mt-32 w-[700px] text-lg" id="projects">
   <div class="flex gap-4">
-    <Left width="15px" />
-    <h2 class="cursor-default">projects</h2>
-    <Right width="15px" />
+    <Left width="10px" />
+    <div class="flex gap-3 items-center">
+      <Browser />
+      <h2 class="cursor-default mb-1">projects</h2>
+    </div>
+    <Right width="10px" />
   </div>
   <Codekey />
 </section>

@@ -1,0 +1,11 @@
+---
+import "../styles/label.css";
+const { text } = Astro.props;
+---
+
+<span
+  class="label text-slate-900 cursor-default border rounded-xl py-[6px] px-5 tracking-wider flex gap-2 items-center border-none bg-gradient-to-r from-violet-200 to-green-200"
+>
+  <slot />
+  {text}</span
+>

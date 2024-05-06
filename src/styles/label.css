@@ -1,0 +1,23 @@
+.label {
+  position: relative;
+  overflow: hidden;
+}
+
+.label::before {
+  content: "";
+  position: absolute;
+  height: 70px;
+  width: 10px;
+  background: #ffffff;
+  box-shadow: 0 0 10px #f0eded;
+  filter: blur(2px);
+  opacity: 0.5;
+  top: -32px;
+  transform: rotate(-20deg) translate(-40px);
+  transition: 0.7s;
+}
+
+.label:hover::before {
+  top: 40px;
+  transform: rotate(-20deg) translate(170px);
+}

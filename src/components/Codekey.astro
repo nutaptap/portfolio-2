@@ -1,10 +1,20 @@
 ---
 import Image from "astro/components/Image.astro";
 import codekey from "../assets/codekey.png";
+import Button from "./Button.astro";
+import DarkButton from "./DarkButton.astro";
+import Label from "./Label.astro";
+import Git from "../icons/Git.astro";
+import Link from "../icons/Link.astro";
+import React from "../icons/React.astro";
+import Typescript from "../icons/Typescript.astro";
+import Node from "../icons/Node.astro";
+import Javascript from "../icons/Javascript.astro";
+import Mongodb from "../icons/Mongodb.astro";
 ---
 
 <article class="mt-12">
-  <div class="bg-purple-300 rounded-xl">
+  <div class="bg-[url('../assets/gradient.png')] bg-[length:1000px] rounded-xl">
     <a href="https://codekey.vercel.app/" target="_blank">
       <Image
         src={codekey}
@@ -14,24 +24,38 @@ import codekey from "../assets/codekey.png";
     </a>
   </div>
   <div class="mt-8">
-    <div class="flex gap-2 items-center">
-      <div class="w-3 h-3 bg-violet-400 rounded-full"></div>
-      <h3 class="cursor-default">Codekey | A coding keyboard game</h3>
+    <div class="flex gap-3 items-center">
+      <div class="w-3 h-3 border-2 border-slate-800 bg-white rounded-full">
+      </div>
+      <h3 class="cursor-default">Codekey - A coding keyboard game</h3>
     </div>
-    <div class="mt-5 cursor-default">
+    <div class="mt-8 flex gap-5 flex-wrap">
+      <Label text="react"><React /></Label>
+      <Label text="typescript"><Typescript /></Label>
+      <Label text="node"><Node /></Label>
+      <Label text="express"><Node /></Label>
+      <Label text="javascript"><Javascript /></Label>
+      <Label text="mongodb"><Mongodb /></Label>
+    </div>
+    <div class="mt-8 cursor-default">
       <p>Codekey is a JavaScript typing test inspired by Monkeytype.</p><p>
         Unlike traditional typing games, <b
           >it features small JS code blocks for users to practice typing instead
           of regular text blocks</b
         >.
-      </p><p>
-        When the test is completed, the user can review their words per minute
-        and accuracy, and save their scores on the <b>leaderboard</b>.
-      </p><p>
-        I built it utilizing event listeners to capture keyboard events, and
-        push them into a collection of arrays, to compare them in real time
-        against the correct characters and provide instant feedback.
       </p>
+      <p>It provides instant feedback and includes multiple timer options.</p>
+      <p>
+        To get started, simply start typing! When the test is completed, the
+        user can review their
+        <b>wpm</b> and <b>accuracy</b>, and save their scores on the <b
+          >leaderboard</b
+        >.
+      </p>
+    </div>
+    <div class="mt-8 flex gap-3">
+      <DarkButton text="code"><Git /></DarkButton>
+      <DarkButton text="demo"><Link /></DarkButton>
     </div>
   </div>
 </article>
