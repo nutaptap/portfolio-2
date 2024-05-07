@@ -4,9 +4,9 @@ import { Image } from "astro:assets";
 import avatar from "../assets/avatar.png";
 import Left from "../icons/Left.astro";
 import Right from "../icons/Right.astro";
-import Button from "./Button.astro";
 import Github from "../icons/Github.astro";
 import Linkedin from "../icons/Linkedin.astro";
+import Link from "./Link.astro";
 ---
 
 <section
@@ -38,12 +38,12 @@ import Linkedin from "../icons/Linkedin.astro";
       </p>
     </div>
     <div class="mt-4 flex gap-3">
-      <Button text="github">
+      <Link text="github" ref="https://github.com/nutaptap">
         <Github />
-      </Button>
-      <Button text="linkedin">
+      </Link>
+      <Link text="linkedin" ref="https://www.linkedin.com/in/nuriafg/">
         <Linkedin />
-      </Button>
+      </Link>
     </div>
   </div>
 </section>

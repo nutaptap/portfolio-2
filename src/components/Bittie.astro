@@ -1,7 +1,7 @@
 ---
 import Image from "astro/components/Image.astro";
 import bittie from "../assets/bittie.png";
-import DarkButton from "./DarkButton.astro";
+import LinkDark from "./LinkDark.astro";
 import Label from "./Label.astro";
 import Git from "../icons/Git.astro";
 import Link from "../icons/Link.astro";
@@ -16,7 +16,7 @@ import Sql from "../icons/Sql.astro";
   <div
     class="bg-[url('../assets/gradient-2.png')] bg-[length:1000px] rounded-xl"
   >
-    <a href="https://codekey.vercel.app/" target="_blank">
+    <a href="https://www.bittie.eu/" target="_blank">
       <Image
         src={bittie}
         alt="Codekey project thumbnail"
@@ -53,8 +53,10 @@ import Sql from "../icons/Sql.astro";
       </p>
     </div>
     <div class="mt-8 flex gap-3">
-      <DarkButton text="code"><Git /></DarkButton>
-      <DarkButton text="demo"><Link /></DarkButton>
+      <LinkDark text="code" ref="https://github.com/nutaptap/bittie"
+        ><Git /></LinkDark
+      >
+      <LinkDark text="demo" ref="https://www.bittie.eu/"><Link /></LinkDark>
     </div>
   </div>
 </article>

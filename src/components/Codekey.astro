@@ -1,7 +1,7 @@
 ---
 import Image from "astro/components/Image.astro";
 import codekey from "../assets/codekey.png";
-import DarkButton from "./DarkButton.astro";
+import LinkDark from "./LinkDark.astro";
 import Label from "./Label.astro";
 import Git from "../icons/Git.astro";
 import Link from "../icons/Link.astro";
@@ -19,6 +19,7 @@ import Mongodb from "../icons/Mongodb.astro";
         src={codekey}
         alt="Codekey project thumbnail"
         class="hover:scale-[103%] duration-500 p-20 drop-shadow-xl"
+        loading="eager"
       />
     </a>
   </div>
@@ -53,8 +54,11 @@ import Mongodb from "../icons/Mongodb.astro";
       </p>
     </div>
     <div class="mt-8 flex gap-3">
-      <DarkButton text="code"><Git /></DarkButton>
-      <DarkButton text="demo"><Link /></DarkButton>
+      <LinkDark text="code" ref="https://github.com/nutaptap/codekey"
+        ><Git /></LinkDark
+      >
+      <LinkDark text="demo" ref="https://codekey.vercel.app/"><Link /></LinkDark
+      >
     </div>
   </div>
 </article>

@@ -1,10 +1,12 @@
 ---
-const { text } = Astro.props;
+const { text, ref } = Astro.props;
 ---
 
-<button
+<a
+  href={ref}
+  target="_blank"
   class="border border-slate-800 rounded-2xl py-1 px-4 bg-slate-800 text-white text-lg tracking-wider hover:bg-black hover:border-black duration-200 flex gap-1 items-center"
 >
   <slot />
-  {text}</button
+  {text}</a
 >
