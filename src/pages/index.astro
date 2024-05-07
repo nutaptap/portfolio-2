@@ -5,6 +5,7 @@ import Intro from "../components/Intro.astro";
 import Left from "../icons/Left.astro";
 import Right from "../icons/Right.astro";
 import Projects from "../components/Projects.astro";
+import About from "../components/About.astro";
 ---
 
 <html lang="en">
@@ -23,18 +24,15 @@ import Projects from "../components/Projects.astro";
       <div class="flex flex-col items-center">
         <Intro />
         <Projects />
-        <section class="mt-32" id="about">
-          <div class="flex gap-4">
-            <Left width="12px" />
-            <h2>about</h2>
-            <Right width="12px" />
-          </div>
-        </section>
-        <section class="mt-32 pb-32" id="contact">
+        <About />
+        <section class="mt-60 pb-32" id="contact">
           <div class="flex gap-4">
             <Left width="12px" />
             <h2>contact</h2>
             <Right width="12px" />
+          </div>
+          <div class="flex">
+            <div></div>
           </div>
         </section>
       </div>

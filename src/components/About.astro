@@ -1,0 +1,52 @@
+---
+import { Image } from "astro:assets";
+import Browser from "../icons/Browser.astro";
+import Left from "../icons/Left.astro";
+import Right from "../icons/Right.astro";
+import picture from "../assets/pic.png";
+---
+
+<section class="mt-32 text-lg" id="about">
+  <div class="flex gap-4">
+    <Left width="12px" />
+    <div class="flex gap-3 items-center">
+      <Browser />
+      <h2 class="cursor-default mb-1">about</h2>
+    </div>
+    <Right width="12px" />
+  </div>
+  <div class="mt-12 flex gap-16 items-center">
+    <div
+      class="w-[234px] h-[275px] flex justify-center items-center rounded-lg bg-gradient-to-r from-violet-300 to-green-200"
+    >
+      <div
+        class="w-[224px] h-[265px] bg-white rounded-md flex justify-center items-center"
+      >
+        <Image
+          src={picture}
+          alt="A picture of Nuria"
+          class="w-[220px] rotate-2 rounded-md drop-shadow-xl hover:scale-[102%] hover:rotate-0 duration-500"
+        />
+      </div>
+    </div>
+    <div class="w-[600px] text-[0.95rem] text-slate-950">
+      <p>
+        My name is Nuria, and I started programming two years ago, out of
+        curiosity, and got hooked right away.
+      </p>
+      <p class="mt-2">
+        I’ve spent most of that time building on the <b>frontend</b>, finding
+        ways to make my code more readable and efficient, without
+        over-complicating it.
+        <b>But I enjoy every part of web development</b>, from planning the
+        project, designing it (I have a background in illustration) and building
+        the backend too.
+      </p>
+      <p class="mt-2">
+        I’m self taught, and I'm constantly learning new things and looking for
+        the next challenge. Currently <b>I'm open for a full time position</b> either
+        remote or based in Barcelona.
+      </p>
+    </div>
+  </div>
+</section>
