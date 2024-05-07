@@ -2,17 +2,21 @@
 import Browser from "../icons/Browser.astro";
 import Left from "../icons/Left.astro";
 import Right from "../icons/Right.astro";
+import Bittie from "./Bittie.astro";
 import Codekey from "./Codekey.astro";
 ---
 
 <section class="mt-32 w-[700px] text-lg" id="projects">
   <div class="flex gap-4">
-    <Left width="10px" />
+    <Left width="12px" />
     <div class="flex gap-3 items-center">
       <Browser />
       <h2 class="cursor-default mb-1">projects</h2>
     </div>
-    <Right width="10px" />
+    <Right width="12px" />
   </div>
-  <Codekey />
+  <div class="flex flex-col gap-12">
+    <Codekey />
+    <Bittie />
+  </div>
 </section>
