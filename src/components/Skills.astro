@@ -1,0 +1,46 @@
+---
+import Angular from "../icons/Angular.astro";
+import Browser from "../icons/Browser.astro";
+import Javascript from "../icons/Javascript.astro";
+import Left from "../icons/Left.astro";
+import Mongodb from "../icons/Mongodb.astro";
+import Node from "../icons/Node.astro";
+import React from "../icons/React.astro";
+import Right from "../icons/Right.astro";
+import Typescript from "../icons/Typescript.astro";
+import Jest from "../icons/Jest.astro";
+import Storybook from "../icons/Storybook.astro";
+import Tailwind from "../icons/Tailwind.astro";
+import Label from "./Label.astro";
+import Sql from "../icons/Sql.astro";
+import AstroIcon from "../icons/AstroIcon.astro";
+import Css from "../icons/Css.astro";
+import Html from "../icons/Html.astro";
+---
+
+<section class="mt-32 text-lg w-[700px]">
+  <div class="flex gap-4">
+    <Left width="12px" />
+    <div class="flex gap-3 items-center">
+      <Browser />
+      <h2 class="cursor-default mb-1">skills</h2>
+    </div>
+    <Right width="12px" />
+  </div>
+  <div class="mt-12 flex flex-wrap gap-5">
+    <Label text="HTML"><Html /></Label>
+    <Label text="CSS"><Css /></Label>
+    <Label text="JavaScript"><Javascript /></Label>
+    <Label text="TypeScript"><Typescript /></Label>
+    <Label text="React"><React /></Label>
+    <Label text="Angular"><Angular /></Label>
+    <Label text="Astro"><AstroIcon /></Label>
+    <Label text="Tailwind"><Tailwind /></Label>
+    <Label text="Node"><Node /></Label>
+    <Label text="Express"><Node /></Label>
+    <Label text="PostgreSQL"><Sql /></Label>
+    <Label text="MongoDB"><Mongodb /></Label>
+    <Label text="Jest"><Jest /></Label>
+    <Label text="Storybook"><Storybook /></Label>
+  </div>
+</section>
