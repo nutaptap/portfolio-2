@@ -19,5 +19,5 @@
 
 .label:hover::before {
   top: 40px;
-  transform: rotate(-20deg) translate(170px);
+  transform: rotate(-20deg) translate(175px);
 }
