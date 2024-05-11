@@ -8,7 +8,7 @@ import Github from "../icons/Github.astro";
 import Linkedin from "../icons/Linkedin.astro";
 import Link from "./Link.astro";
 
-const { intro } = Astro.props;
+const { intro, url } = Astro.props;
 ---
 
 <section
@@ -42,7 +42,7 @@ const { intro } = Astro.props;
       <Link text="github" ref="https://github.com/nutaptap">
         <Github />
       </Link>
-      <Link text="linkedin" ref="https://www.linkedin.com/in/nuriafg/">
+      <Link text="linkedin" ref={url}>
         <Linkedin />
       </Link>
     </div>

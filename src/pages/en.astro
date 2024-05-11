@@ -14,6 +14,7 @@ import {
   about,
   contact,
 } from "../language-text/english.js";
+import Github from "../icons/Github.astro";
 ---
 
 <html lang="en">
@@ -30,7 +31,10 @@ import {
     <Header language="es" header={header} />
     <main class="mt-32 flex items-center justify-center">
       <div class="flex flex-col items-center justify-center">
-        <Intro intro={intro} />
+        <Intro
+          intro={intro}
+          url="https://www.linkedin.com/in/nuriafg/?locale=en_US"
+        />
         <Projects
           title="projects"
           codekeytext={codekeytext}
@@ -41,5 +45,33 @@ import {
         <Contact title="contact" contact={contact} />
       </div>
     </main>
+    <footer class="flex gap-8 items-center pb-11">
+      <div class="flex gap-4 items-center">
+        <a
+          href="https://www.linkedin.com/in/nuriafg/?locale=en_US"
+          target="_blank"
+          class="text-xl tracking-wider border-[1px] p-[0.30rem] pt-0 pb-0 text-white bg-slate-800 rounded-md hover:bg-black cursor-pointer select-none duration-200"
+        >
+          in
+        </a>
+        <a
+          href="https://github.com/nutaptap"
+          target="_blank"
+          class="p-[0.33rem] text-white bg-slate-800 rounded-full hover:bg-black cursor-pointer select-none duration-200"
+        >
+          <Github />
+        </a>
+      </div>
+      <div>
+        <p>This website was built using Astro.</p>
+        <p>
+          You can check out the code <a
+            class="underline hover:text-black duration-200"
+            href="https://github.com/nutaptap/portfolio-2"
+            target="_blank">here</a
+          >.
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
