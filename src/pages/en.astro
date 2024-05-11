@@ -31,10 +31,14 @@ import {
     <main class="mt-32 flex justify-center">
       <div class="flex flex-col items-center">
         <Intro intro={intro} />
-        <Projects codekeytext={codekeytext} bittietext={bittietext} />
-        <About about={about} />
+        <Projects
+          title="projects"
+          codekeytext={codekeytext}
+          bittietext={bittietext}
+        />
+        <About title="about" about={about} />
         <Skills />
-        <Contact contact={contact} />
+        <Contact title="contact" contact={contact} />
       </div>
     </main>
   </body>

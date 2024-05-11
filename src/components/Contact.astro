@@ -6,7 +6,7 @@ import Mail from "../icons/Mail.astro";
 import Right from "../icons/Right.astro";
 import Link from "./Link.astro";
 
-const { contact } = Astro.props;
+const { contact, title } = Astro.props;
 ---
 
 <section class="mt-32 mb-36 text-lg w-[600px]" id="contact">
@@ -14,7 +14,7 @@ const { contact } = Astro.props;
     <Left width="12px" />
     <div class="flex gap-3 items-center">
       <Browser />
-      <h2 class="cursor-default mb-1">contact</h2>
+      <h2 class="cursor-default mb-1">{title}</h2>
     </div>
     <Right width="12px" />
   </div>
