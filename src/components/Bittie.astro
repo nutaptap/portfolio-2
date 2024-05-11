@@ -10,6 +10,8 @@ import Typescript from "../icons/Typescript.astro";
 import Node from "../icons/Node.astro";
 import Javascript from "../icons/Javascript.astro";
 import Sql from "../icons/Sql.astro";
+
+const { bittietext } = Astro.props;
 ---
 
 <article class="mt-12">
@@ -28,7 +30,7 @@ import Sql from "../icons/Sql.astro";
     <div class="flex gap-3 items-center">
       <div class="w-3 h-3 border-2 border-slate-800 bg-white rounded-full">
       </div>
-      <h3 class="cursor-default">Bittie - A URL shortener</h3>
+      <h3 class="cursor-default">Bittie - {bittietext[0]}</h3>
     </div>
     <div class="mt-8 flex gap-5 flex-wrap">
       <Label text="Angular"><Angular /></Label>
@@ -40,16 +42,12 @@ import Sql from "../icons/Sql.astro";
     </div>
     <div class="mt-8 cursor-default">
       <p>
-        Bittie is a <b>link management CRUD application</b> that allows users to
-        create custom short links for easy sharing.
+        {bittietext[1]}<b>{bittietext[2]}</b>{bittietext[3]}
       </p><p>
-        I built the frontend using Angular, where I integrated Google <b
-          >login</b
-        >
-        functionality using the angularx-social-login library.
+        {bittietext[4]}<b>{bittietext[5]}</b>
+        {bittietext[6]}
       </p><p>
-        On the backend, I created an <b>API</b> that allows users to save, edit,
-        or delete custom links, as well as retrieve the appropriate redirect destinations.
+        {bittietext[7]}<b>{bittietext[8]}</b>{bittietext[9]}
       </p>
     </div>
     <div class="mt-8 flex gap-3">

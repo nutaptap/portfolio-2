@@ -1,19 +1,22 @@
 ---
 import Logo from "../icons/Logo.astro";
 import Anchor from "./Anchor.astro";
+
+const { header, language } = Astro.props;
 ---
 
 <header class="flex justify-center py-6">
   <nav class="flex gap-8">
-    <div class="cursor-default">
+    <div class="cursor-default mr-1">
       <Logo />
     </div>
-    <Anchor reference="#projects" text="projects" />
-    <Anchor reference="#about" text="about" />
-    <Anchor reference="#contact" text="contact" />
-    <button
+    <Anchor reference="#projects" text={header[0]} />
+    <Anchor reference="#about" text={header[1]} />
+    <Anchor reference="#contact" text={header[2]} />
+    <a
+      href={"/" + language}
       class="hover:text-violet-700 duration-150 font-[520] flex content-center mt-[1.2px] text-[1.05rem]"
-      >es</button
+      >{language}</a
     >
   </nav>
 </header>

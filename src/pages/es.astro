@@ -1,0 +1,41 @@
+---
+import "../styles/global.css";
+import Header from "../components/Header.astro";
+import Intro from "../components/Intro.astro";
+import Projects from "../components/Projects.astro";
+import About from "../components/About.astro";
+import Skills from "../components/Skills.astro";
+import Contact from "../components/Contact.astro";
+import {
+  header,
+  intro,
+  codekeytext,
+  bittietext,
+  about,
+  contact,
+} from "../language-text/spanish.js";
+---
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Nuria | Fullstack developer</title>
+  </head>
+  <body
+    class="flex flex-col absolute inset-0 -z-10 h-full w-full bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"
+  >
+    <Header language="en" header={header} />
+    <main class="mt-32 flex justify-center">
+      <div class="flex flex-col items-center">
+        <Intro intro={intro} />
+        <Projects codekeytext={codekeytext} bittietext={bittietext} />
+        <About about={about} />
+        <Skills />
+        <Contact contact={contact} />
+      </div>
+    </main>
+  </body>
+</html>

@@ -4,6 +4,8 @@ import Browser from "../icons/Browser.astro";
 import Left from "../icons/Left.astro";
 import Right from "../icons/Right.astro";
 import picture from "../assets/pic.png";
+
+const { about } = Astro.props;
 ---
 
 <section class="mt-32 text-lg" id="about">
@@ -24,28 +26,21 @@ import picture from "../assets/pic.png";
       >
         <Image
           src={picture}
-          alt="A picture of Nuria"
+          alt="Nuria"
           class="w-[220px] rotate-2 rounded-md drop-shadow-xl hover:scale-[102%] hover:rotate-0 duration-500"
         />
       </div>
     </div>
     <div class="w-[600px] git staty text-slate-950">
       <p>
-        My name is Nuria, and I started programming two years ago, out of
-        curiosity, and got hooked right away.
+        {about[0]}
       </p>
       <p class="mt-2">
-        I’ve spent most of that time building on the <b>frontend</b>, finding
-        ways to make my code more readable and efficient, without
-        over-complicating it.
-        <b>But I enjoy every part of web development</b>, from planning the
-        project, designing it (I have a background in illustration) and building
-        the backend too.
+        {about[1]}<b>{about[2]}</b>{about[3]}
+        <b>{about[4]}</b>{about[5]}
       </p>
       <p class="mt-2">
-        I’m self taught, and I'm constantly learning new things and looking for
-        the next challenge. Currently <b>I'm open for a full time position</b> either
-        remote or based in Barcelona.
+        {about[6]}<b>{about[7]}</b>{about[8]}
       </p>
     </div>
   </div>

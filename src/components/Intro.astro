@@ -7,6 +7,8 @@ import Right from "../icons/Right.astro";
 import Github from "../icons/Github.astro";
 import Linkedin from "../icons/Linkedin.astro";
 import Link from "./Link.astro";
+
+const { intro } = Astro.props;
 ---
 
 <section
@@ -25,16 +27,15 @@ import Link from "./Link.astro";
   <div class="flex flex-col w-[500px] px-3">
     <div class="intro-text">
       <h1 class="mb-3">
-        Hello, I'm <span class="name">Nuria</span><span class="gradient"
+        {intro[0]}<span class="name">Nuria</span><span class="gradient"
           >Nuria</span
         >.
       </h1>
       <p class="text-lg">
-        I’m a <b>fullstack</b> developer based in Barcelona, Spain. 🇪🇸
+        {intro[1]}<b>{intro[2]}</b>{intro[3]}
       </p>
       <p class="text-lg">
-        I create beautiful & intricate user interfaces while prioritizing both
-        <b>performance</b> and <b>accessibility</b>.
+        {intro[4]}<b>{intro[5]}</b>{intro[6]}<b>{intro[7]}</b>.
       </p>
     </div>
     <div class="mt-4 flex gap-3">
