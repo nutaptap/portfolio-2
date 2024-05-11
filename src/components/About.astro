@@ -1,6 +1,6 @@
 ---
 import { Image } from "astro:assets";
-import Browser from "../icons/Browser.astro";
+import AboutIcon from "../icons/AboutIcon.astro";
 import Left from "../icons/Left.astro";
 import Right from "../icons/Right.astro";
 import picture from "../assets/pic.png";
@@ -12,7 +12,7 @@ const { about, title } = Astro.props;
   <div class="flex gap-4">
     <Left width="12px" />
     <div class="flex gap-3 items-center">
-      <Browser />
+      <AboutIcon />
       <h2 class="cursor-default mb-1">{title}</h2>
     </div>
     <Right width="12px" />
