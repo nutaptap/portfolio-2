@@ -18,8 +18,10 @@ import Css from "../icons/Css.astro";
 import Html from "../icons/Html.astro";
 ---
 
-<section class="mt-32 text-lg w-[770px]">
-  <div class="flex gap-4">
+<section
+  class="mt-32 text-lg w-[450px] md:w-[770px] flex flex-col items-center"
+>
+  <div class="flex gap-4 self-start">
     <Left width="12px" />
     <div class="flex gap-3 items-center">
       <SkillsIcon />
@@ -27,7 +29,7 @@ import Html from "../icons/Html.astro";
     </div>
     <Right width="12px" />
   </div>
-  <div class="mt-12 grid grid-cols-4 gap-4">
+  <div class="mt-12 w-[370px] md:w-auto grid grid-cols-2 md:grid-cols-4 gap-4">
     <Label text="HTML"><Html /></Label>
     <Label text="CSS"><Css /></Label>
     <Label text="JavaScript"><Javascript /></Label>
