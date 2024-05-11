@@ -7,7 +7,7 @@ const { header, language } = Astro.props;
 
 <header class="flex justify-center py-6">
   <nav class="flex gap-8">
-    <div class="cursor-default mr-1">
+    <div class="cursor-default mr-1 hidden md:block">
       <Logo />
     </div>
     <Anchor reference="#projects" text={header[0]} />
