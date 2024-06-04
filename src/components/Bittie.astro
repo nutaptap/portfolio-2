@@ -21,7 +21,7 @@ const { bittietext } = Astro.props;
     <a href="https://www.bittie.eu/" target="_blank">
       <Image
         src={bittie}
-        alt="Codekey project thumbnail"
+        alt="Bittie project demo"
         class="hover:scale-[103%] duration-500 p-20 drop-shadow-xl"
       />
     </a>
@@ -53,10 +53,16 @@ const { bittietext } = Astro.props;
       </p>
     </div>
     <div class="mt-8 flex gap-3">
-      <LinkDark text="code" ref="https://github.com/nutaptap/bittie"
-        ><Git /></LinkDark
+      <LinkDark
+        text="code"
+        aria-label="Bittie project source code"
+        ref="https://github.com/nutaptap/bittie"><Git /></LinkDark
       >
-      <LinkDark text="demo" ref="https://www.bittie.eu/"><Link /></LinkDark>
+      <LinkDark
+        text="demo"
+        aria-label="Bittie project demo"
+        ref="https://www.bittie.eu/"><Link /></LinkDark
+      >
     </div>
   </div>
 </article>

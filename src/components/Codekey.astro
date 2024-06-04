@@ -20,7 +20,7 @@ const { codekeytext } = Astro.props;
     <a href="https://codekey.vercel.app/" target="_blank">
       <Image
         src={codekey}
-        alt="Codekey project thumbnail"
+        alt="Codekey project demo"
         class="hover:scale-[103%] duration-500 p-20 drop-shadow-xl"
         loading="eager"
       />
@@ -55,10 +55,15 @@ const { codekeytext } = Astro.props;
       </p>
     </div>
     <div class="mt-8 flex gap-3">
-      <LinkDark text="code" ref="https://github.com/nutaptap/codekey"
-        ><Git /></LinkDark
+      <LinkDark
+        text="code"
+        aria-label="Codekey project source code"
+        ref="https://github.com/nutaptap/codekey"><Git /></LinkDark
       >
-      <LinkDark text="demo" ref="https://codekey.vercel.app/"><Link /></LinkDark
+      <LinkDark
+        text="demo"
+        aria-label="Codekey project demo"
+        ref="https://codekey.vercel.app/"><Link /></LinkDark
       >
     </div>
   </div>
